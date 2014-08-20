@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition" template="/pages/template/layout.jsp">
+        <put-attribute name="title" cascade="true" value="" />
+        <put-attribute name="header" value="/pages/template/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/pages/template/footer.jsp" />
+    </definition>
+    
+    <definition name="hello" extends="base.definition">
+        <put-attribute name="title" cascade="true" value="Hello Page" />
+        <put-attribute name="content" value="/pages/hello.jsp" />
+    </definition>
+
+    <definition name="admin" extends="base.definition">
+        <put-attribute name="title" cascade="true" value="Admin Page" />
+        <put-attribute name="content" value="/pages/secured/admin.jsp" />
+    </definition>
+    
+    <definition name="register" extends="base.definition">
+        <put-attribute name="title" cascade="true" value="Register Page" />
+        <put-attribute name="content" value="/pages/connexion/register.jsp" />
+    </definition>
+    
+    <definition name="login" extends="base.definition">
+        <put-attribute name="title" cascade="true" value="Login Page" />
+        <put-attribute name="content" value="/pages/connexion/login.jsp" />
+    </definition>
+    
+    <definition name="ok" extends="base.definition">
+        <put-attribute name="title" cascade="true" value="Ok Page" />
+        <put-attribute name="content" value="/pages/secured/ok.jsp" />
+    </definition>   
+    
+</tiles-definitions>
