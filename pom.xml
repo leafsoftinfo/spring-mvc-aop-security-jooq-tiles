@@ -7,7 +7,7 @@
     <artifactId>spring-security-helloworld-xml</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>SpringSecurity Hello World XML</name>
+    <name>Spring-Mvc-Aop-Security-Jooq-Tiles</name>
     <url>http://www.mkyong.com/tutorials/spring-security-tutorials/</url>
 
     <licenses>
